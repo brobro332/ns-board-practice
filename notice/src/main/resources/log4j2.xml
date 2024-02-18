@@ -21,8 +21,8 @@
 	</Appenders>
 	
 	<Loggers>
-		 <!-- =================================================================== -->
-		<!-- TESTPROJECT specific Logger setting								 -->
+		<!-- =================================================================== -->
+		<!-- specific Logger setting								 -->
 		<!-- =================================================================== -->	
 	    <logger name="kr.co.notice" level="debug" additivity="false">
 	    	<AppenderRef ref="console" /> <!-- 콘솔에 로그 찍겠단 뜻 -->
@@ -76,7 +76,7 @@
 	      	<AppenderRef ref="file" />
 	     </logger>
 	     
-     	 <logger name="jdbc.resultset" level="error" additivity="false" >
+     	 <logger name="jdbc.resultsets" level="error" additivity="false" >
       		<AppenderRef ref="console" />
       		<AppenderRef ref="file" />
     	 </logger>
