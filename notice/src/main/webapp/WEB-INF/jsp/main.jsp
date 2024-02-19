@@ -53,29 +53,28 @@ section {
 	height: 100vh;
 }
 .tabs-header {
-	padding: 20px;
+	padding: 40px;
 	background-color: white;
 }
 body {
 	overflow: hidden;
-	border: 18px solid #95B8E7;
 	height: 100vh;
 }
 .easyui-tabs .tab {
-	padding: 3%;
+	padding: 7%;
 	padding-top: 0;
 	display: none; 
 	overflow: scroll;
 }
-  .fixed-border {
-    display: fixed;
-    border: 2px solid black;
-    width: 200px; /* 너비와 높이를 원하는 값으로 조정하세요 */
-    height: 100px;
-    top: 50%; /* 원하는 위치로 수정하세요 */
-    left: 50%; /* 원하는 위치로 수정하세요 */
-    transform: translate(-50%, -50%);
-  }
+.fixed-border {
+  display: fixed;
+  border: 2px solid black;
+  width: 200px; /* 너비와 높이를 원하는 값으로 조정하세요 */
+  height: 100px;
+  top: 50%; /* 원하는 위치로 수정하세요 */
+  left: 50%; /* 원하는 위치로 수정하세요 */
+  transform: translate(-50%, -50%);
+}
 </style>
 <script>
 // 모니터의 크기에 따라 tabsDiv 크기 조절
@@ -89,6 +88,13 @@ window.onload = function() {
     layoutDiv[0].style.height = screenHeight * 1.1 / 2 + 'px';
     layoutDiv[0].style.top = -(screenHeight / 20) + 'px';
 }
+
+$(document).ready(function() {
+	$('#tt').tabs({
+		onSelect:function(title) {
+		}
+	});
+});
 </script>
 </head>
 <body>

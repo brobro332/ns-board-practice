@@ -127,7 +127,7 @@
 			<version>2.5.0</version>
 		</dependency>
 
-        <!-- mysql이나 oracle DB 사용시 아래 설정 추가
+		<!-- Oracle -->
         <dependency>
             <groupId>com.googlecode.log4jdbc</groupId>
             <artifactId>log4jdbc</artifactId>
@@ -141,25 +141,18 @@
         </dependency>
 
         <dependency>
-            <groupId>commons-dbcp</groupId>
-            <artifactId>commons-dbcp</artifactId>
-            <version>1.4</version>
-        </dependency>
-
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-dbcp2</artifactId>
+		    <version>2.9.0</version>
+		</dependency>
+        
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.31</version>
-        </dependency>
-
-        <dependency>
-            <groupId>ojdbc</groupId>
-            <artifactId>ojdbc</artifactId>
-            <version>14</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ojdbc-14.jar</systemPath>
-        </dependency>
-        -->
+			<groupId>ojdbc</groupId>
+			<artifactId>ojdbc</artifactId>
+			<version>6</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ojdbc6-11.2.0.3.jar</systemPath>
+		</dependency>
         
         <!-- slf4j -->
         <dependency>
