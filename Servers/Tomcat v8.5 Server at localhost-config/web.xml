@@ -425,7 +425,7 @@
     <!-- The mapping for the default servlet -->
     <servlet-mapping>
         <servlet-name>default</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/notice/</url-pattern>
     </servlet-mapping>
 
     <!-- The mappings for the JSP servlet -->
